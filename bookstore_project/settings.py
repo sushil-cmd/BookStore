@@ -111,6 +111,9 @@ USE_TZ = True
 # Cause our project to use CustomUser instead of the default User model.
 AUTH_USER_MODEL = 'users.CustomUser'
 
+# Tells Django to go to homepage as default is to look for accounts/profile
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
