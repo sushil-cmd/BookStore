@@ -5,9 +5,9 @@ services:
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
     environment:
-      - ENVIRONMENT=development
+      - ENVIRONMENT=production
       - SECRET_KEY=$$6c$$p2^his1fbauwc!*&s*!0y2&fhhc1rw*p)epcrqff8hff=&
-      - DEBUG=1
+      - DEBUG=0
       - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51IU7CNFyxQPkK3SMHoChQX5B66D0foNL8byfWCjgob1W2nAwQudiPyNd2x2Xz43wJ8KYLZJeIk4OC9zLI7n66AAS003Uij3BMs
       - STRIPE_TEST_SECRET_KEY=sk_test_51IU7CNFyxQPkK3SMGlpHaIsmwvyzw6HoCYNhF9BMSxlgOXGAfX2SJrHYDLEWDJWxiIRBm1lGby7j4B5EXay8bdBg00BNbGbhgt
 
